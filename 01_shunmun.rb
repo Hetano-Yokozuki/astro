@@ -55,3 +55,6 @@ cosc = cosa * cos(nanchu*Math::PI/ 180.0)
 kakudo = acos(cosc)/(PI/180.0)
 p kakudo
 
+am0 = kakudo + 180
+p am0
+
