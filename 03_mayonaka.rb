@@ -56,7 +56,7 @@ kakudo = acos(cosc)/(PI/180.0)
 p "On the ecliptic, the degree between Vernal equinox and today's Culmination altitude is #{kakudo} degrees."
 
 am0 = kakudo + 180
-p am0
+p "#{am0} degrees is a degree of midnight on the ecliptic...(ignoring Precession and some principles...)"
 
 ######################
 #
