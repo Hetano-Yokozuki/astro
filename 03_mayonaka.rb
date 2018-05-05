@@ -76,3 +76,13 @@ board = am0 + katameshiya_kaku
 
 p "#{starboard} is the width of what we can see over our right hands..."
 p "#{board} is the width of what we can see over our left hands..."
+
+shita = -55
+cosTakasa = 3/sqrt(34)
+takasa = acos(cosTakasa)/(PI/180)
+
+p "#{takasa} is a limit of the highest"
+
+kaku_1byo=360.0/((3600*24)-236)
+p kaku_1byo
+

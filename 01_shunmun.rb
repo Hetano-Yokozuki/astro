@@ -76,3 +76,7 @@ p katameshiya_kaku
 # p cos(60*PI/180)
 # p acos(cos(60*PI/180))
 # p 60*PI/180
+include Math
+kaku_1byo=360.0/((3600*24)-236)
+p kaku_1byo
+
