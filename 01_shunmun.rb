@@ -35,7 +35,8 @@ today.leap? if false
 days_of_year = 365
 
 nanchu = (360.0/days_of_year)*days_from_sp_eq_day
- p nanchu
+p nanchu
+
 # Napier no housoku 
 # https://en.wikipedia.org/wiki/Spherical_trigonometry#Napier's_rules_for_quadrantal_triangles
 
@@ -47,6 +48,10 @@ sinB = sqrt(1-(cosB**2))/1.0
 cosa = cos(23.43*Math::PI/ 180.0)/sinB
 cosc = cosa * cos(nanchu*Math::PI/ 180.0)
 
-p sin(30*Math::PI/ 180.0)
-p cos(nanchu*Math::PI/ 180.0)
-p cosc
+# p sin(30*Math::PI/ 180.0)
+# p cos(nanchu*Math::PI/ 180.0)
+# p cosc
+
+kakudo = acos(cosc)/(PI/180.0)
+p kakudo
+
