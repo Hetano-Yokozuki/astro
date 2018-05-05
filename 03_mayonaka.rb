@@ -23,8 +23,8 @@ days_from_sp_eq_day = (today.to_date - spring_equinox_day).to_i
 
 ########################
 #
+# calcurate the dgree on the equator from a dgree on ecliptic 
 # 
-#
 ########################
 
 # leap or not?
@@ -35,7 +35,7 @@ today.leap? if false
 days_of_year = 365
 
 nanchu = (360.0/days_of_year)*days_from_sp_eq_day
-p nanchu
+p "On the equator, the degree between Vernal equinox and today's Culmination altitude is #{nanchu} degrees."
 
 # Napier no housoku 
 # https://en.wikipedia.org/wiki/Spherical_trigonometry#Napier's_rules_for_quadrantal_triangles
@@ -53,14 +53,14 @@ cosc = cosa * cos(nanchu*Math::PI/ 180.0)
 # p cosc
 
 kakudo = acos(cosc)/(PI/180.0)
-p kakudo
+p "On the ecliptic, the degree between Vernal equinox and today's Culmination altitude is #{kakudo} degrees."
 
 am0 = kakudo + 180
 p am0
 
 ######################
 #
-# try to acquire a degree from cos.
+# try to acquire a degree of width of my eyes....
 #
 ######################
 
@@ -73,6 +73,3 @@ p acos(cosX)
 katameshiya_kaku=acos(cosX)/(PI/180)
 p katameshiya_kaku
 
-# p cos(60*PI/180)
-# p acos(cos(60*PI/180))
-# p 60*PI/180

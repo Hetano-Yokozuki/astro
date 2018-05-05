@@ -12,7 +12,8 @@ cosX = teihen/shahen
 
 # acquire a dgree in radian from cosX 
 p acos(cosX)
-
+katameshiya_kaku=acos(cosX)/(PI/180)
+p katameshiya_kaku
 
 # p cos(60*PI/180)
 # p acos(cos(60*PI/180))
