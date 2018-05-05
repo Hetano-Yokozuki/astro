@@ -69,7 +69,10 @@ teihen = 2
 cosX = teihen/shahen
 
 # acquire a dgree in radian from cosX 
-p acos(cosX)
 katameshiya_kaku=acos(cosX)/(PI/180)
-p katameshiya_kaku
+p "#{katameshiya_kaku} degrees is the width of what we can see our one eye..."
+starboard = am0 - katameshiya_kaku
+board = am0 + katameshiya_kaku
 
+p "#{starboard} is the width of what we can see over our right hands..."
+p "#{board} is the width of what we can see over our left hands..."
